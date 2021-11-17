@@ -53,4 +53,7 @@ plt.ylabel('USD')
 # titulo
 plt.title('PIB per capita Latinoamerica', loc='left', fontsize=20)
 plt.show()
+# Fuente
+# https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
 ```
+
