@@ -39,6 +39,12 @@ Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dolla
 
 URL: [UN - PIB por País](http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1)
 
+![PIB Países Latinoamericanos 2018-2019](image/Slope_Chart_PIB.png)
+
+En el gráfico presentado se pueden obtener rapidamente algunas conclusiones como, que Uruguay y Chile presenta el PIB mas alto de la región, mientras que Ecuador y Perú el mas bajo, aunque Perú presenta un ligero aumento y Ecuador, Uruguay y Chile presentan una baja de su valor de PIB, correspondiente a una tendencia dentro de la región. Así mismo, es destacable la gran disminución que han tenido Uruguay, Chile y Argentina; en donde, Utuguay y Argentina coinciden en el año de elecciones para Senado y Presidencia respectivamente.
+
+El código fuente de la representación es la siguiente:
+
 ``` Python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -71,18 +77,28 @@ plt.show()
 # Fuente
 # https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
 ```
-![PIB Países Latinoamericanos 2018-2019](image/Slope_Chart_PIB.png)
-
-En el gráfico obtenido se puede concluir rapidamente algunas 
 
 ### OHLC Chart
 
-
-
+La visualización correspondiente a OHLC está orientada principalmente al análisis de tendencias y variación de precios, por lo que, en este punto se ha evaluado la evolución del precio de las acciones de las empresas Netflix y Amazon entre 2019 y 2020.
 
 Fuente de Datos: Repositorio Kaggle. OHLC Financial Data. Denis.
 
 URL: [Kaggle - OHLC Financial Data](https://www.kaggle.com/dozmaden/ohlc-financial-data)
+
+#### Precio de las acciones de Netflix (2019-2020)
+
+![OHLC Stock Price Netflix](image/OHLC_Netflix.png)
+
+
+#### Precio de las acciones de Amazon (2019-2020)
+
+![OHLC Stock Price Amazon](image/OHLC_Amazon.png)
+
+
+Para poder visualizar de mejor manera los valores de las acciones, se ha tomado valores aleatorios en el periodo de 2019 y 2020, en donde, se puede obserbar que en el mes de Septiembre de 2019 ambas empresas presentan una baja en el precio de sus acciones, el cual, se recupera progresivamente hasta septiembre 2020, donde se tiene el valor máximo en ambos. Finalmente, vale acotar que el precio de la acción de Amazon supera en aproximadamente 5 veces el precio de la acción de Netflix.
+
+El código fuente de la representación es la siguiente:
 
 ```
 import pandas as pd
@@ -121,7 +137,3 @@ plt.show()
 # Fuente
 # https://towardsdatascience.com/basics-of-ohlc-charts-with-pythons-matplotlib-56d0e745a5be
 ```
-
-![OHLC Stock Price Netflix](image/OHLC_Netflix.png)
-
-![OHLC Stock Price Amazon](image/OHLC_Amazon.png)
