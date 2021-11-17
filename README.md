@@ -19,7 +19,7 @@ URL: [Kaggle - NYC Cause of Death 2007 - 2014](https://www.kaggle.com/new-york-c
 
 ![NYC Death Causes Pyramid Chart](image/NYC_Pyramid_Chart.png)
 
-En esta visualización se han presentado las cuatro principales causas de fallecimiento, en donde, se observa que un tercio de ellas corresponden a enfermedades del corazón, igualando al resto de causas con excepción del cáncer, influenza y diabetes. Igualmente, en el gráfico interactivo se ha añadido el porcentaje de cada causa según la raza. Como información extra gráfico se puede indicar que aproximadamente el 34% de las personas fallecidas corresponde a la raza blanca no hispana. 
+En esta visualización se han presentado las cuatro principales causas de fallecimiento, en donde, se observa que un tercio de ellas corresponden a enfermedades del corazón, igualando al resto de causas con excepción del cáncer, influenza y diabetes. Igualmente, en el gráfico interactivo se ha añadido el porcentaje de cada causa según la raza. Como información extra gráfico se puede indicar que aproximadamente el 34% de las personas fallecidas corresponden a la raza blanca no hispana. 
 
 Fuente de Datos: Repositorio Kaggle. Population Pyramid 2019 - Population pyramid (by age group and gender) for some countries - Divyanshu Sharma.
 
@@ -33,7 +33,7 @@ La visualización de los Pyramid Charts indicados previamente se encuentran disp
 
 ### Slope Chart
 
-Para el caso de la visualización de lineas, se ha realizado la programación en lenguaje Python tomando en cuenta la información del PIB del repositorio de datos de las Naciones Unidas, en donde, se han seleccionado algunos países de Centro América y Sudamérica para obtener una comparación de la evolución del PIB entre los años 2018 y 2019.
+Para el caso de la visualización de lineas, se ha realizado la programación en lenguaje Python tomando en cuenta la información del PIB del repositorio de datos de las Naciones Unidas, en donde, se han seleccionado algunos países de Sudamérica y México para obtener una comparación de la evolución del PIB entre los años 2018 y 2019.
 
 Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
 
@@ -41,7 +41,7 @@ URL: [UN - PIB por País](http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A1
 
 ![PIB Países Latinoamericanos 2018-2019](image/Slope_Chart_PIB.png)
 
-En el gráfico presentado se pueden obtener rapidamente algunas conclusiones como, que Uruguay y Chile presenta el PIB mas alto de la región, mientras que Ecuador y Perú el mas bajo, aunque Perú presenta un ligero aumento y Ecuador, Uruguay y Chile presentan una baja de su valor de PIB, correspondiente a una tendencia dentro de la región. Así mismo, es destacable la gran disminución que han tenido Uruguay, Chile y Argentina; en donde, Utuguay y Argentina coinciden en el año de elecciones para Senado y Presidencia respectivamente.
+En el gráfico presentado se pueden obtener rapidamente algunas conclusiones como, que Uruguay y Chile presenta el PIB mas alto de la región, mientras que Ecuador y Perú el mas bajo, aunque Perú presenta un ligero aumento; y, Ecuador, Uruguay y Chile presentan una baja de su valor de PIB, correspondiente a una tendencia dentro de la región. Así mismo, es destacable la gran disminución que han tenido Uruguay, Chile y Argentina; en donde, Uruguay y Argentina coinciden en el año de elecciones para Senado y Presidencia respectivamente.
 
 El código fuente de la representación es la siguiente:
 
@@ -80,7 +80,7 @@ plt.show()
 
 ### OHLC Chart
 
-La visualización correspondiente a OHLC está orientada principalmente al análisis de tendencias y variación de precios, por lo que, en este punto se ha evaluado la evolución del precio de las acciones de las empresas Netflix y Amazon entre 2019 y 2020.
+La visualización correspondiente a OHLC está orientada principalmente al análisis de tendencias y variación de precios, por lo que, en este punto se ha evaluado la evolución del precio de las acciones de las empresas Netflix y Amazon entre 2019 y 2020. Así mismo, se ha utilizado el lenguaje Python para la generación del OHLC Chart.
 
 Fuente de Datos: Repositorio Kaggle. OHLC Financial Data. Denis.
 
