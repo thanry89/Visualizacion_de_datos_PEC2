@@ -1,53 +1,24 @@
 import pandas as pd
-import numpy as np
-
 import matplotlib.pyplot as plt
-%matplotlib inline
 
-# Set up the data
-data = np.concatenate(
-    [[np.random.normal(loc=1, size=15), 15*['site1'], 15*['healthy']],
-     [np.random.normal(loc=3, size=15), 15*['site2'], 15*['healthy']],
-     [np.random.normal(loc=0, size=15), 15*['site3'], 15*['healthy']],
-     [np.random.normal(loc=1, size=15), 15*['site1'], 15*['disease']],
-     [np.random.normal(loc=1, size=15), 15*['site2'], 15*['disease']],
-     [np.random.normal(loc=3, size=15), 15*['site3'], 15*['disease']]],
-    axis=1)
-df = pd.DataFrame(columns=['value', 'site', 'label'], data=data.T)
-df['value'] = df['value'].astype(float)
+df = pd.read_csv('UNdata.csv')
 
-# Show every ninth row
-df.iloc[::9]
-
-fig, ax = plt.subplots(figsize=(4, 3))
-
-# Set up list to track sites
-sites = []
-i = 1.0
-for site, subdf in df.groupby('site'):
-    sites.append(site)
-    # Get the values for healthy and disease patients
-    h = subdf.query('label == "healthy"')['value'].values
-    d = subdf.query('label == "disease"')['value'].values
-
-    # Set up the x-axis values
-    x1 = i - 0.2
-    x2 = i + 0.2
-
-    # Plot the lines connecting the dots
-    for hi, di in zip(h, d):
-        ax.plot([x1, x2], [hi, di], c='gray')
-
-    # Plot the points
-    ax.scatter(len(h)*[x1-0.01], h, c='k',
-               s=25, label='healthy')
-    ax.scatter(len(d)*[x2+0.01], d, c='k',
-               s=25, label='disease')
-
-
-    # Update x-axis
-    i += 1
-
-# Fix the axes and labels
-ax.set_xticks([1, 2, 3])
-_ = ax.set_xticklabels(sites, fontsize='x-large')
+countries = ['Argentina', 'Brazil', 'Chile', 'Ecuador', 'Mexico', 'Peru', 'Uruguay']
+fig, ax = plt.subplots(1, figsize=(10,10))
+for i in countries:
+    # get a single country from the list
+    temp = df[df['Country or Area'] == i]
+    # plot the lines
+    plt.plot(temp.Year, temp.Value, marker='o', markersize=5)
+    # end label
+    plt.text(temp.Year.values[0]+0.02, temp.Value.values[0], i)
+    # start label
+    plt.text(temp.Year.values[1]-0.02, temp.Value.values[1], i, ha='right')
+    
+# x limits, x ticks, and y label 
+plt.xlim(2017.5,2019.5)
+plt.xticks([2018, 2019])
+# get y ticks, replace 1,000 with k, and draw the ticks
+yticks = plt.yticks()[0]
+plt.yticks(yticks, ['{}k'.format(i/1000) for i in yticks])
+plt.show()
