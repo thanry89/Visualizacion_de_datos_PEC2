@@ -13,16 +13,22 @@ En el presente proyecto se presentan tres pequeñas muestras de técnicas de vis
 
 Esta visualización ha sido generada en la web gratuita INFOGRAM, en donde se presentan dos tipos de Pyramid Chart, por un lado se presenta una piramide con información cuanlitativa y por el otro una visualización cuantitativo correspondiente a un Population Pyramid (comparativo de Población y Sexo entre China y Estados Unidos).
 
+
+Fuente de Datos: Repositorio Kaggle. NY New York City Leading Causes of Death - City of New York.
+
+URL: [Kaggle - NYC Cause of Death 2007 - 2014](https://www.kaggle.com/new-york-city/ny-new-york-city-leading-causes-of-death)
+
+
+
 Fuente de Datos: Repositorio Kaggle. Population Pyramid 2019 - Population pyramid (by age group and gender) for some countries - Divyanshu Sharma.
 
-URL: https://www.kaggle.com/hotessy/population-pyramid-2019
+URL: [Kaggle - Population Pyramid 2019](https://www.kaggle.com/hotessy/population-pyramid-2019)
 
 La visualización de los Pyramid Charts se encuentran disponibles en el siguiente link: [Infogram Pyramid Charts](https://infogram.com/pyramid-charts-1hxr4zx9dzl8o6y?live)
 
-![Infogram - Population Pyramid Chart](/image/NYC_Pyramid_Chart.png)
+![NYC Death Causes Pyramid Chart](image/NYC_Pyramid_Chart.png)
 
-![Infogram - NYC Death Causes](image/Population_Pyramid_Chart.png)
-
+![Population Pyramid Chart](image/Population_Pyramid_Chart.png)
 
 ### Slope Chart
 
@@ -30,7 +36,7 @@ Para el caso de esta visualización se ha realizado la programación en lenguaje
 
 Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
 
-URL: http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1
+URL: [UN - PIB por País](http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1)
 
 ``` Python
 import pandas as pd
@@ -64,16 +70,16 @@ plt.show()
 # Fuente
 # https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
 ```
-![PIB Países Latinoamericanos 2018-201](image/Slope_Chart_PIB.png)
+![PIB Países Latinoamericanos 2018-2019](image/Slope_Chart_PIB.png)
 
 ### OHLC Chart
 
 
 
 
-Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
+Fuente de Datos: Repositorio Kaggle. OHLC Financial Data. Denis.
 
-URL: http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1
+URL: [Kaggle - OHLC Financial Data](https://www.kaggle.com/dozmaden/ohlc-financial-data)
 
 ```
 import pandas as pd
