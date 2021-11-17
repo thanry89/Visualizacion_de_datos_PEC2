@@ -14,6 +14,7 @@ En el presente proyecto se presentan tres pequeñas muestras de técnicas de vis
 Esta visualización ha sido generada en la web gratuita INFOGRAM, en donde se presentan dos tipos de Pyramid Chart, por un lado se presenta una piramide con información cuanlitativa y por el otro una visualización cuantitativo correspondiente a un Population Pyramid (comparativo de Población y Sexo entre China y Estados Unidos).
 
 Fuente de Datos: Repositorio Kaggle. Population Pyramid 2019 - Population pyramid (by age group and gender) for some countries - Divyanshu Sharma.
+
 URL: https://www.kaggle.com/hotessy/population-pyramid-2019
 
 La visualización de los Pyramid Charts se encuentran disponibles en el siguiente link: [Infogram Pyramid Charts](https://infogram.com/pyramid-charts-1hxr4zx9dzl8o6y?live)
@@ -23,10 +24,15 @@ La visualización de los Pyramid Charts se encuentran disponibles en el siguient
 
 ### Slope Chart
 
+Para el caso de esta visualización se ha realizado la programación en lenguaje Python tomando en cuenta la información del PIB del repositorio de datos de las Naciones Unidas, en donde, se han seleccionado algunos países de Centro América y Sudamérica para obtener una comparación de la evolución del PIB entre los años 2018 y 2019. 
+
+Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
+
+URL: http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1
+
 ``` Python
 import pandas as pd
 import matplotlib.pyplot as plt
-
 
 # Fuente de datos
 df = pd.read_csv('UNdata.csv')
@@ -56,4 +62,4 @@ plt.show()
 # Fuente
 # https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
 ```
-
+![PIB Países Latinoamericanos 2018-201](image/Slope_Chart_PIB.png)
