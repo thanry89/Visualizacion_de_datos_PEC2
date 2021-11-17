@@ -21,3 +21,4 @@ biomedicalrevenue %>%
   facet_wrap(vars(year), scales = "free_y")
 ```
 
+![Test Image 3](/Untitled.png)
