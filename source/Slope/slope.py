@@ -1,9 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+# Fuente de datos
 df = pd.read_csv('UNdata.csv')
 
+# Listado de países
 countries = ['Argentina', 'Brazil', 'Chile', 'Ecuador', 'Mexico', 'Peru', 'Uruguay']
+
+# Visualización
 fig, ax = plt.subplots(1, figsize=(10,10))
 for i in countries:
     # get a single country from the list
@@ -18,7 +23,9 @@ for i in countries:
 # x limits, x ticks, and y label 
 plt.xlim(2017.5,2019.5)
 plt.xticks([2018, 2019])
-# get y ticks, replace 1,000 with k, and draw the ticks
-yticks = plt.yticks()[0]
-plt.yticks(yticks, ['{}k'.format(i/1000) for i in yticks])
+plt.ylabel('USD')
+# titulo
+plt.title('PIB per capita Latinoamerica', loc='left', fontsize=20)
 plt.show()
+# Fuente
+# https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
