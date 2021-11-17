@@ -11,28 +11,29 @@ En el presente proyecto se presentan tres pequeñas muestras de técnicas de vis
 
 ### Pyramid Chart
 
-Esta visualización ha sido generada en la web gratuita INFOGRAM, en donde se presentan dos tipos de Pyramid Chart, por un lado se presenta una piramide con información cuanlitativa y por el otro una visualización cuantitativo correspondiente a un Population Pyramid (comparativo de Población y Sexo entre China y Estados Unidos).
-
+Esta visualización ha sido generada en la web gratuita INFOGRAM, en donde se presentan dos tipos de Pyramid Chart, por un lado una piramide con información relativa a las causas de fallecimientos en la ciudad de Nueva York entre 2007 a 2014; y de otro lado, una visualización cuantitativa correspondiente a un Population Pyramid (comparativo de Población y Sexo entre China y Estados Unidos) respecto del año 2019.
 
 Fuente de Datos: Repositorio Kaggle. NY New York City Leading Causes of Death - City of New York.
 
 URL: [Kaggle - NYC Cause of Death 2007 - 2014](https://www.kaggle.com/new-york-city/ny-new-york-city-leading-causes-of-death)
 
+![NYC Death Causes Pyramid Chart](image/NYC_Pyramid_Chart.png)
 
+En esta visualización se han presentado las cuatro principales causas de fallecimiento, en donde, se observa que un tercio de ellas corresponden a enfermedades del corazón, igualando al resto de causas con excepción del cáncer, influenza y diabetes. Igualmente, en el gráfico interactivo se ha añadido el porcentaje de cada causa según la raza. Como información extra gráfico se puede indicar que aproximadamente el 34% de las personas fallecidas corresponde a la raza blanca no hispana. 
 
 Fuente de Datos: Repositorio Kaggle. Population Pyramid 2019 - Population pyramid (by age group and gender) for some countries - Divyanshu Sharma.
 
 URL: [Kaggle - Population Pyramid 2019](https://www.kaggle.com/hotessy/population-pyramid-2019)
 
-La visualización de los Pyramid Charts se encuentran disponibles en el siguiente link: [Infogram Pyramid Charts](https://infogram.com/pyramid-charts-1hxr4zx9dzl8o6y?live)
-
-![NYC Death Causes Pyramid Chart](image/NYC_Pyramid_Chart.png)
-
 ![Population Pyramid Chart](image/Population_Pyramid_Chart.png)
+
+La visualización corresponde a una comparativa entre la distribución de población, edad y sexo entre los habitantes de China y Estados Unidos. En donde, la primera conclusión que se puede observar a primera vista es que la población de China por edad supera aproximadamente en 4 veces la población de Estados Unidos. Adicionalmente, se puede observar que la distribución de población entre los habitantes de Estados Unidos sigue una tendencia normal, con disminución a medida que aumenta la edad; sin embargo, la población de China presenta una disminución de población entre 0 y 39 años con excepción del rango de 25 a 29 años.
+
+La visualización de los Pyramid Charts indicados previamente se encuentran disponibles en el siguiente link: [Infogram Pyramid Charts](https://infogram.com/pyramid-charts-1hxr4zx9dzl8o6y?live)
 
 ### Slope Chart
 
-Para el caso de esta visualización se ha realizado la programación en lenguaje Python tomando en cuenta la información del PIB del repositorio de datos de las Naciones Unidas, en donde, se han seleccionado algunos países de Centro América y Sudamérica para obtener una comparación de la evolución del PIB entre los años 2018 y 2019. 
+Para el caso de la visualización de lineas, se ha realizado la programación en lenguaje Python tomando en cuenta la información del PIB del repositorio de datos de las Naciones Unidas, en donde, se han seleccionado algunos países de Centro América y Sudamérica para obtener una comparación de la evolución del PIB entre los años 2018 y 2019.
 
 Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
 
@@ -71,6 +72,8 @@ plt.show()
 # https://towardsdatascience.com/slope-charts-with-pythons-matplotlib-2c3456c137b8
 ```
 ![PIB Países Latinoamericanos 2018-2019](image/Slope_Chart_PIB.png)
+
+En el gráfico obtenido se puede concluir rapidamente algunas 
 
 ### OHLC Chart
 
