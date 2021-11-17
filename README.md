@@ -19,7 +19,9 @@ URL: https://www.kaggle.com/hotessy/population-pyramid-2019
 
 La visualización de los Pyramid Charts se encuentran disponibles en el siguiente link: [Infogram Pyramid Charts](https://infogram.com/pyramid-charts-1hxr4zx9dzl8o6y?live)
 
-![Infogram - Population Pyramid Chart](image/Population_Pyramid_Chart.png)
+![Infogram - Population Pyramid Chart](/image/NYC_Pyramid_Chart.png)
+
+![Infogram - NYC Death Causes](image/Population_Pyramid_Chart.png)
 
 
 ### Slope Chart
@@ -66,6 +68,9 @@ plt.show()
 
 ### OHLC Chart
 
+
+
+
 Fuente de Datos: Repositorio UNData. Per capita GDP at current prices - US dollars. United Nations
 
 URL: http://data.un.org/Data.aspx?q=GDP&d=SNAAMA&f=grID%3A101%3BcurrID%3AUSD%3BpcFlag%3A1
@@ -108,3 +113,6 @@ plt.show()
 # https://towardsdatascience.com/basics-of-ohlc-charts-with-pythons-matplotlib-56d0e745a5be
 ```
 
+![OHLC Stock Price Netflix](image/OHLC_Netflix.png)
+
+![OHLC Stock Price Amazon](image/OHLC_Amazon.png)
